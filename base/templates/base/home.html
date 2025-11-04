@@ -1,0 +1,295 @@
+{% extends 'main.html' %} {% load static %} {% block content %}
+{% include 'base/partials/home_hero.html' %}
+
+<section class="counters">
+    <div class="social-proof-1 flex_div">
+        <p><span class="counter" data-target="8000">0</span>fillings <br> completed</p>
+        <div class="separator"></div>
+        <p><span class="counter" data-target="9000">0</span>extractions <br>performes</p>
+        <div class="separator"></div>
+        <p><span class="counter" data-target="5000">0</span>dentures <br> fitted</p>
+    </div>
+</section>
+<section class="homepage">
+    <article class="pain-point flex_div">
+        <div class="pain-point-container pain-point-div flex_div">
+            <picture>
+                <source
+                        media="(min-width: 200px)"
+                        srcset="{% static 'img/homepage/banner#2.webp' %}"
+                        type="image/webp"
+                />
+                <img src="{% static 'img/homepage/banner#2.png' %}"/>
+            </picture>
+            <div class="pain-point-text">
+                <h2>
+                    Long-lasting results built on trust and quality.
+                </h2>
+                <p>
+                    Too often, dental visits mean discomfort, rushed appointments, and
+                    uncertainty about the cost. We know how discouraging that feels.
+                    That’s why we focus on a different kind of care—where your comfort
+                    comes first, your treatment is gentle, and your smile is cared for
+                    with skill and compassion.
+                </p>
+                <a>Book an appointment</a>
+            </div>
+        </div>
+        <div class="pain-point-img2 pain-point-div">
+            <picture>
+                <source
+                        srcset="{% static 'img/homepage/dentist-black-woman-patient-clinic-with-medical-healthcare-teeth-cleaning-mirror-orthodontist-african-female-person-with-wellness-dental-work-tool-mouth-with-care_590464-191196-3.webp' %}"
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                />
+                <source
+                        media="(min-width: 1200px)"
+                        srcset="{% static 'img/homepage/1.jpg' %}"
+                        type="image/jpg"
+                />
+                <img src="{% static 'img/homepage/1.jpg' %}" alt=""/>
+            </picture>
+        </div>
+    </article>
+    <article class="value-prop-wrapper">
+        <h2>Care that goes beyond the chair...</h2>
+        <div class="value-prop-container flex_div">
+            <div class="flex_div value-prop">
+                <img srcset="{% static 'img/icons/icon1.png' %}" src="{% static 'img/icons/icon1.png' %}"
+                     alt="tooth-icon">
+                <h3>Experienced Hands, Modern Tools</h3>
+                <p>With over 15 years of experience and the latest dental technology, we deliver safe, effective
+                    treatments you can trust. Our blend of expertise and innovation ensures the best care for your
+                    smile.</p>
+            </div>
+            <div class="flex_div value-prop">
+                <img srcset="{% static 'img/icons/icon2.png' %}" src="{% static 'img/icons/icon2.png' %}"
+                     alt="tooth-icon">
+                <h3>Affordable Care Without Compromise</h3>
+                <p>High-quality dentistry shouldn’t come with surprise bills. We provide transparent pricing, flexible
+                    options, and treatments tailored to your needs—because your health shouldn’t depend on your
+                    wallet.</p>
+            </div>
+            <div class="flex_div value-prop">
+                <img srcset="{% static 'img/icons/icon3.png' %}" src="{% static 'img/icons/icon3.png' %}"
+                     alt="tooth-icon">
+                <h3>Dentistry Designed Around You</h3>
+                <p>No two smiles are the same. We listen, understand your needs, and create personalized treatment plans
+                    that fit your lifestyle—so you always feel in control of your dental health.</p>
+            </div>
+            <div class="flex_div value-prop">
+                <img srcset="{% static 'img/icons/icon4.png' %}" src="{% static 'img/icons/icon4.png' %}"
+                     alt="tooth-icon">
+                <h3>Comfort First, Always</h3>
+                <p>Forget the cold, clinical experience. From our warm environment to gentle procedures, everything we
+                    do is built to keep you comfortable while receiving world-class dental care.</p>
+            </div>
+            <div class="flex_div value-prop">
+                <img srcset="{% static 'img/icons/icon5.png' %}" src="{% static 'img/icons/icon5.png' %}"
+                     alt="tooth-icon">
+                <h3>Healthy Smiles for Every Age</h3>
+                <p>From children’s checkups to dentures for seniors, we care for the whole family. Our experience across
+                    generations makes us the trusted choice for families throughout Welkom and beyond.</p>
+            </div>
+            <div class="flex_div value-prop">
+                <img srcset="{% static 'img/icons/icon6.png' %}" src="{% static 'img/icons/icon6.png' %}"
+                     alt="tooth-icon">
+                <h3>A Team That Feels Like Family</h3>
+                <p>At Dr. Taje’s practice, you’re not just a patient—you’re part of our community. Our friendly,
+                    approachable team makes every visit feel less like a chore and more like catching up with people who
+                    care.</p>
+            </div>
+            <div class="flex_div value-prop">
+                <img srcset="{% static 'img/icons/icon1.png' %}" src="{% static 'img/icons/icon1.png' %}"
+                     alt="tooth-icon">
+                <h3>Care That Goes Beyond the Chair</h3>
+                <p>We don’t just fix problems—we help prevent them. With proactive care, education, and support, we
+                    empower you to maintain a healthier smile for life.</p>
+            </div>
+            <div class="flex_div value-prop">
+                <img srcset="{% static 'img/icons/icon3.png' %}" src="{% static 'img/icons/icon3.png' %}"
+                     alt="tooth-icon">
+                <h3>Trust Built Over Generations</h3>
+                <p>For more than 15 years, families have trusted us with their smiles. Our reputation is built on
+                    compassion, consistency, and a commitment to delivering dental care you can depend on.</p>
+            </div>
+
+        </div>
+
+
+    </article>
+    <article class="trust-container flex_div">
+        <div class="trust-img">
+            <picture>
+                <source
+                        media="(min-width: )"
+                        type="image/webp"
+                        srcset="{% static 'img/homepage/dentist-black-woman-patient-clinic-with-medical-healthcare-teeth-cleaning-mirror-orthodontist-african-female-person-with-wellness-dental-work-tool-mouth-with-care_590464-191196-3.webp' %}"
+                >
+                <img src="{% static 'img/homepage/dentist-black-woman-patient-clinic-with-medical-healthcare-teeth-cleaning-mirror-orthodontist-african-female-person-with-wellness-dental-work-tool-mouth-with-care_590464-191196-3.webp' %}"
+                     alt="">
+            </picture>
+        </div>
+
+        <div class="trust-text flex_div">
+            <h2>Trusted family care, from kids to seniors </h2>
+            <p>Families across Welkom trust us because we care for everyone under one roof. From children’s check-ups to
+                dentures for seniors, our team is here to make sure every member of your family feels confident and
+                cared for.</p>
+            <ul>
+                <li><span><i class="fa-solid fa-circle-check"></i></span>Pain-Free Dentistry Backed by Modern Technology
+                </li>
+                <li><span><i class="fa-solid fa-circle-check"></i></span>Personalized Treatments Designed Around Your
+                    Needs
+                </li>
+                <li><span><i class="fa-solid fa-circle-check"></i></span>Healthy Smiles Made Simple with Online Booking
+                </li>
+                <li><span><i class="fa-solid fa-circle-check"></i></span>Lasting Results Through Advanced, Gentle
+                    Techniques
+                </li>
+                <li><span><i class="fa-solid fa-circle-check"></i></span>Quality Care Without the Long Waits or Hidden
+                    Costs
+                </li>
+                <li><span><i class="fa-solid fa-circle-check"></i></span>Affordable Smiles, Delivered with Transparent
+                    Care
+                </li>
+                <li><span><i class="fa-solid fa-circle-check"></i></span>Gentle Procedures, Powered by 15+ Years of
+                    Expertise
+                </li>
+                <li><span><i class="fa-solid fa-circle-check"></i></span>Modern Dentistry in a Warm, Family-Friendly
+                    Space
+                </li>
+            </ul>
+        </div>
+
+    </article>
+    <article class="social-proof2 flex_div">
+        <picture>
+            <source
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                    srcset="{% static 'img/homepage/banner.webp' %}">
+            <img src="{% static 'img/homepage/banner.webp' %}" alt="">
+        </picture>
+        <div class="social-proof2-3rd"><p><span>15+ years</span> of trusted dental experience</p></div>
+        <div class="separator"></div>
+        <div class="social-proof2-3rd"><p>Over <span>10,000 patient</span> visits completed</p></div>
+        <div class="separator"></div>
+        <div class="social-proof2-3rd"><p><span>Hundreds</span> of restored smiles every year</p></div>
+    </article>
+    <article class="steps-container-wrapper flex_div">
+        <div class="steps-container flex_div">
+            <h2>Your Healthier Smile in 3 Easy Steps</h2>
+            <div class="steps flex_div">
+                <div class="flex_div">
+                    <picture>
+                        <source
+                                media="(min-width: 200px)"
+                                type="image/png"
+                                srcset="{% static 'img/icons/icon#1.png' %}"
+                        >
+                        <img src="" alt="">
+                    </picture>
+                </div>
+                <div class="">
+                    <p>Book online in minutes</p>
+                    <p>Choose a time that works for you using our simple, hassle-free booking form—anytime,
+                        anywhere.</p>
+                </div>
+
+            </div>
+            <div class="steps flex_div">
+                <div class="flex_div">
+                    <picture>
+                        <source
+                                media="(min-width: 200px)"
+                                type="image/png"
+                                srcset="{% static 'img/icons/icon#2.png' %}"
+                        >
+                        <img src="" alt="">
+                    </picture>
+                </div>
+                <div class="">
+                    <p>Visit our friendly practice</p>
+                    <p>Step into a warm, welcoming environment where our caring team and modern equipment ensure gentle,
+                        stress-free treatment.</p>
+                </div>
+            </div>
+            <div class="steps flex_div">
+                <div class="flex_div">
+                    <picture>
+                        <source
+                                media="(min-width: 200px)"
+                                type="image/png"
+                                srcset="{% static 'img/icons/icon#3.png' %}"
+                        >
+                        <img src="" alt="">
+                    </picture>
+                </div>
+                <div class="">
+                    <p>Leave with a confident smile</p>
+                    <p>Walk out feeling better, brighter, and healthier—knowing your smile is in trusted hands.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="contact-form flex_div">
+                                <h2>Make an appointment</h2>
+                                <p>No hidden fees—just quality treatments within budget.</p>
+                                <form action="" method="" class="flex_div">
+                                    <input type="text" name="name" placeholder="Name" class="input">
+                                    <input type="text" name="phone" placeholder="Phone" class="input">
+                                    <input type="email" name="email" placeholder="email" class="input">
+                                    <select class="input">
+                                        <option></option>
+                                    </select>
+                                    <input type="date" name="date" class="input">
+                                    <input type="time" name="time" class="input">
+                                    <textarea rows="5"></textarea>
+                                    <button type="submit">Make an appointment</button>
+                                </form>
+<!--            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0fDW0kfX75KeMV1-wVfgulMWOSNVWbyXoBOXF1TIZkXy4DGGAiEdklZHoSiOlhkF3BVIKAV8aK?gv=true"-->
+<!--                    frameborder="0"></iframe>-->
+
+        </div>
+        <!-- Google Calendar Appointment Scheduling begin -->
+
+        <!-- end Google Calendar Appointment Scheduling -->
+    </article>
+    <article class="last-call flex_div">
+        <div class="last-call-text-container flex_div">
+            <div class="last-call-img">
+                <picture>
+                    <source
+                            media="(min-width: 200px)"
+                            type="image/webp"
+                            srcset="{% static 'img/homepage/background.webp' %} "
+                    >
+                    <img src="" alt="">
+                </picture>
+            </div>
+
+            <div class="last-call-text">
+                <h2>Take the First Step to a Confident Smile Now</h2>
+                <p>We’ve helped countless patients transform their smiles—yours could be next. Take the first step today
+                    and join the many families who already trust us with their dental health.</p>
+                <a>Get your smile</a>
+            </div>
+
+        </div>
+        <div class="last-call-img-container">
+            <div class="last-call-img">
+                <picture>
+                    <source
+                            media="(min-width:1200px)"
+                            type="image/webp"
+                            srcset="{% static 'img/homepage/1.jpg' %}"
+                    >
+                    <img src="{% static 'img/homepage/1.jpg' %}" alt="">
+                </picture>
+            </div>
+        </div>
+
+    </article>
+</section>
+{% endblock %}

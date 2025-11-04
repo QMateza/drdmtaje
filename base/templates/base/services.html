@@ -1,0 +1,177 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+{% include 'base/partials/half_hero.html' %}
+<section class="services">
+
+    <div class="services-wrapper">
+        <div class="container flex_div">
+            <div class="services-image services-content image">
+            <picture>
+                <source
+                        media="(min-width: 200px)"
+                        type="image/jpg"
+                        srcset="{% static 'img/homepage/pexels-tima-miroshnichenko-5355890.jpg' %}"
+                >
+                <img src="" alt="">
+            </picture>
+        </div>
+            <article class="flex_div services-content">
+                <picture>
+                    <source
+                        media="(min-width: 200px)"
+                        type="image/png"
+                        srcset="{% static 'img/icons/icon5.png' %}"
+                        >
+                    <img src="" alt="">
+                </picture>
+                <h3>Extractions (Normal & surgical)</h3>
+                <div class="divider">
+                </div>
+                <p>
+                    We provide gentle and efficient tooth extractions to relieve pain
+                    and improve your oral health. Whether it’s a simple removal or a
+                    more complex surgical procedure, our skilled team ensures you’re
+                    comfortable every step of the way. Your well-being is our top
+                    priority.
+                </p>
+            </article>
+            <article class="flex_div services-content">
+                <picture>
+                    <source
+                        media="(min-width: 200px)"
+                        type="image/png"
+                        srcset="{% static 'img/icons/icon7.png' %}"
+                        >
+                    <img src="" alt="">
+                </picture>
+                <h3>Fillings</h3>
+                <div class="divider">
+                </div>
+                <p>
+                    Restore your smile with high-quality dental fillings designed to
+                    repair cavities and damaged teeth. Using durable, natural-looking
+                    materials, we help protect your teeth while maintaining a seamless
+                    appearance.
+                </p>
+            </article>
+            <article class="flex_div services-content">
+                <picture>
+                    <source
+                        media="(min-width: 200px)"
+                        type="image/png"
+                        srcset="{% static 'img/icons/icon3.png' %}"
+                        >
+                    <img src="" alt="">
+                </picture>
+                <h3>Permanent False Teeth (Crowns & Bridges)</h3>
+                <div class="divider">
+                </div>
+                <p>
+                    Regain your confidence and functionality with custom-crafted
+                    crowns and bridges. These long-lasting solutions restore missing
+                    or damaged teeth, giving you a strong, beautiful smile that feels
+                    natural.
+                </p>
+            </article>
+            <div class="services-image services-content image">
+            <picture>
+                <source
+                        media="(min-width: 200px)"
+                        type="image/jpg"
+                        srcset="{% static 'img/homepage/pexels-tima-miroshnichenko-5355890.jpg' %}"
+                >
+                <img src="" alt="">
+            </picture>
+        </div>
+            <article class="flex_div services-content">
+                <picture>
+                    <source
+                        media="(min-width: 200px)"
+                        type="image/png"
+                        srcset="{% static 'img/icons/icon2.png' %}"
+                        >
+                    <img src="" alt="">
+                </picture>
+                <h3>Removable False Teeth</h3>
+                <div class="divider">
+                </div>
+                <p>
+                    Enjoy the flexibility and convenience of removable false teeth.
+                    Our dentures are tailored for comfort and fit, making them an
+                    excellent option for replacing multiple teeth while maintaining a
+                    confident smile.
+                </p>
+            </article>
+            <article class="flex_div services-content">
+                <picture>
+                    <source
+                        media="(min-width: 200px)"
+                        type="image/png"
+                        srcset="{% static 'img/icons/icon1.png' %}"
+                        >
+                    <img src="" alt="">
+                </picture>
+                <h3>Teeth Cleaning</h3>
+                <div class="divider">
+                </div>
+                <p>
+                    Maintain a healthy, radiant smile with professional teeth
+                    cleaning. Our thorough cleaning removes plaque, tartar, and
+                    stains, preventing gum disease and keeping your teeth sparkling.
+                </p>
+            </article>
+            <article class="flex_div services-content">
+                <picture>
+                    <source
+                        media="(min-width: 200px)"
+                        type="image/png"
+                        srcset="{% static 'img/icons/icon6.png' %}"
+                        >
+                    <img src="" alt="">
+                </picture>
+                <h3>Inlays</h3>
+                <div class="divider">
+                </div>
+                <p>
+                    For damaged teeth that need extra care, inlays provide a precise
+                    and durable solution. Custom-made to fit your tooth, they restore
+                    strength and functionality while blending seamlessly with your
+                    natural teeth.
+                </p>
+            </article>
+            <article class="flex_div services-content">
+                <picture>
+                    <source
+                        media="(min-width: 200px)"
+                        type="image/png"
+                        srcset="{% static 'img/icons/icon4.png' %}"
+                        >
+                    <img src="" alt="">
+                </picture>
+                <h3>Teeth Whitening</h3>
+                <div class="divider">
+                </div>
+                <p>
+                    Brighten your smile with our safe and effective teeth whitening
+                    treatments. Designed to remove stains and discoloration, our
+                    whitening services leave your teeth looking vibrant and
+                    rejuvenated.
+                </p>
+            </article>
+            <div class="services-image services-content image visible">
+            <picture>
+                <source
+                        media="(min-width: 200px)"
+                        type="image/jpg"
+                        srcset="{% static 'img/homepage/pexels-tima-miroshnichenko-5355890.jpg' %}"
+                >
+                <img src="" alt="">
+            </picture>
+        </div>
+        </div>
+    </div>
+
+</section>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% load static %}
+
+<div class="hero-pic flex_div hero-wrapper">
+    <picture>
+        <source
+                media="(min-width: 768px)"
+                type="image/webp"
+                srcset="{% static 'img/homepage/family-with-healthy-teeth-smiling_768.webp' %}"
+        >
+
+        <source
+                media="(min-width: 10px)"
+                type="image/webp"
+                srcset="{% static 'img/homepage/family-with-healthy-teeth-smiling_400.webp' %}"
+        >
+        <img src="" alt="">
+    </picture>
+    <div class="hero_pic_text">
+        <p class="hero-pic-text-social-proof"><span>Bachelor of Science (BSc),</span><span> Bachelor of Dental Surgery (BDS)</span>
+        </p>
+        <h1 class="heading">
+            Trusted Dentist in Welkom. Healthy Teeth, Confident Smile!
+        </h1>
+        <p class="subheading">
+            With over 15 years of experience and hundreds of happy clients, we pride
+            ourselves on delivering stress-free dentistry that leaves you feeling
+            cared for and confident.
+        </p>
+        <div class="cta">
+            <a href="{% url 'contacts' %}">Book an appointment</a>
+        </div>
+
+    </div>
+</div>

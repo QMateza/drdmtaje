@@ -1,0 +1,23 @@
+{% load static %}
+
+<div id="logo">
+    <a href="{% url 'home' %}"><img src="{% static 'img/dentist-logo.png' %}" alt=""/></a>
+</div>
+<nav class="flex_div">
+    <ul class="nav_links">
+        <li class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}"><a href="{% url 'home' %}">Home</a></li>
+        <li class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}"><a href="{% url 'about' %}">About Us</a></li>
+        <li class="{% if request.resolver_match.url_name == 'services' %}active{% endif %}"><a href="{% url 'services' %}">Services</a></li>
+        <li class="{% if request.resolver_match.url_name == 'contacts' %}active{% endif %}"><a href="{% url 'contacts' %}">Contacts</a></li>
+    </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="line3"></div>
+    </div>
+
+    <div>
+        <a href="{% url 'contacts' %}">Make an appointment</a>
+    </div>
+</nav>

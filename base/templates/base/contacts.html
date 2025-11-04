@@ -1,0 +1,48 @@
+{% extends 'main.html' %}
+
+{% block content %}
+{% include 'base/partials/half_hero.html' %}
+<div class="main-contact container">
+    <div class="inner_wrapper flex_div">
+        <div class="main-contact-inner">
+            <div class="main-contact-form">
+                <div id="errorMessage" class="errMsg"></div>
+                <div id="numErrorText" class="errMsg"></div>
+                <div id="emailErrorMessage" class="errMsg"></div>
+                <div id="telephoneErrorMessage" class="errMsg"></div>
+
+                <div class="contact-form flex_div">
+                    <h2>Make an appointment</h2>
+                    <p>No hidden fees—just quality treatments within budget.</p>
+                    <form action="" method="" class="flex_div">
+                        <input type="text" name="name" placeholder="Name" class="input">
+                        <input type="text" name="phone" placeholder="Phone" class="input">
+                        <input type="email" name="email" placeholder="email" class="input">
+                        <select class="input">
+                            <option></option>
+                        </select>
+                        <input type="date" name="date" class="input">
+                        <input type="time" name="time" class="input">
+                        <textarea rows="5"></textarea>
+                        <button type="submit">Make an appointment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contact_wrapper">
+                <h2 class="header_h2">Give us a shout</h2>
+                <p>
+                    <a href="tel:0677228798" class="phone fa_icon">067 722 8798</a>
+                </p>
+                <p>
+                    <a href="mailto:info@acresbend.co.za" class="email fa_icon">info@dmtaje.co.za</a>
+                </p>
+                <p>
+                <address class="location fa_icon">8277 Nkaone Road, Welkom</address>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

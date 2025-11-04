@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta
+            name="description"
+            content="Trusted dentist in Welkom  with 15+ years’ experience. Gentle, affordable care for the whole family. Book online today and leave with a confident smile."
+    />
+    <title>Dr DM Taje - Trusted dentist in Welkom. Experienced Dentist at Affordable Rates and Prices.</title>
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="{% static 'styles/style.css' %}"
+    />
+    <link
+            rel="shortcut icon"
+            type="image/png"
+            href="{% static 'img/favicon.png' %}"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script defer src="{% static 'js/app.js' %}"></script>
+</head>
+<body>
+<button id="back-to-top" class="back-to-top">
+    <picture>
+        <source
+            media="(min-width: 0)"
+            type="image/png"
+            srcset="{% static 'img/icons/arrow.png' %}"
+        >
+        <img src="" alt="">
+    </picture>
+</button>
+<div class=" whatsapp-link">
+<!--    <a href="https://wa.me/+27730189279?text=Hello" target="_blank">-->
+    <a href="https://api.whatsapp.com/send?phone=+27730189279&text=Hello" target="_blank">
+        <picture>
+            <source
+                media="(min-width: 0)"
+                type="image/png"
+                srcset="{% static 'img/icons/whatsapp-bck.png' %}"
+            >
+            <img src="" alt="">
+        </picture>
+        </a>
+</div>
+
+<header>
+    <div class="contact-container">
+        <div class="contact">
+            <p>
+                <span><i class="fa-solid fa-clock"></i></span> Mon-Fri 09h00 - 20h00
+            </p>
+            <p>
+                <span><i class="fa-solid fa-mobile-screen-button"></i></span>
+                1234567890
+            </p>
+            <p>
+                <span><i class="fa-solid fa-envelope"></i></span>
+                info@drdmtaje.co.za
+            </p>
+        </div>
+        <div class="socials">
+          <span class="linkedin"
+          ><a
+                  href="https://web.facebook.com/mpho.taj?comment_id=Y29tbWVudDoxMDIwMTgwMzA0MjQzNTM0M18xMDIwMTgwMzA1Nzg3NTcyOQ%3D%3D"
+                  target="_blank"
+          ><i
+                  class="fa-brands fa-linkedin fa-lg"
+                  style="color: #ffffff"
+          ></i></a
+          ></span>
+            <span class="facebook"
+            ><a
+                    href="https://web.facebook.com/mpho.taj?comment_id=Y29tbWVudDoxMDIwMTgwMzA0MjQzNTM0M18xMDIwMTgwMzA1Nzg3NTcyOQ%3D%3D"
+                    target="_blank"
+            ><i
+                    class="fa-brands fa-facebook fa-lg"
+                    style="color: #ffffff"
+            ></i></a
+            ></span>
+            <span class="instagram"
+            ><a href="https://www.instagram.com/ditlharetaje/" target="_blank"
+            ><i
+                    class="fa-brands fa-instagram fa-lg"
+                    style="color: #ffffff"
+            ></i
+            ></a>
+          </span>
+        </div>
+    </div>
+    <div id="header_inner" class="flex_div">{% include 'nav.html' %}</div>
+</header>
+{% block content %} {% endblock %}
+<footer>
+    <div class="footer">
+        <picture>
+            <source
+                    media="(min-width: 200px)"
+                    type="images/webp"
+                    srcset="{% static 'img/homepage/footer.webp' %}"
+            >
+            <img src="{% static 'img/homepage/footer.webp' %}" alt="">
+        </picture>
+    </div>
+    <div class="footer-wrapper flex_div">
+        <div class="footer-logo">
+            <picture>
+                <source
+                        media="(min-width: 0px)"
+                        type="image/png"
+                        srcset="{% static 'img/white-logo.png' %}"
+                >
+                <img src="" alt=""/>
+            </picture>
+
+        </div>
+
+        <div class="footer_container flex_div">
+            <div class="services_footer">
+                <h5>Services</h5>
+                <ul>
+                    <li><a href="">Dental Cleaning</a></li>
+                    <li><a href="">Fillings</a></li>
+                    <li><a href="">Extractions</a></li>
+                    <li><a href="">Dentures</a></li>
+                </ul>
+            </div>
+            <div class="links_footer">
+                <h5>Useful links</h5>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'contacts' %}">Contact</a></li>
+                </ul>
+            </div>
+            <div class="contact_footer">
+                <h5>Contact Us</h5>
+                <ul>
+                    <li>8277 Nkaone Road, Las Vegas</li>
+                    <li>Thabong</li>
+                    <li>Welkom</li>
+                    <li>9463</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p>
+        Dr. DM Taje. All rights reserved. &copy; Copyright
+        <span id="date_now"></span>. Website by Q Mateza.
+    </p>
+</footer>
+</body>
+</html>

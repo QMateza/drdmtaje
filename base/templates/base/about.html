@@ -1,0 +1,106 @@
+{% extends 'main.html' %} {% load static %} {% block content %}
+{% include 'base/partials/half_hero.html' %}
+
+<section class="about-wrapper">
+
+    <article class="profile">
+        <div class="profile-container flex_div">
+            <div class="profile-text">
+                <h2>Meet your trusted dentist</h2>
+                <p class="subheading">Dr. Ditlhare Taje</p>
+                <ul>
+                    <li><i class="fa-solid fa-tooth"></i>Over 15 years of dental experience</li>
+                    <li><i class="fa-solid fa-tooth"></i>Bachelor of Science (BSc), 2003 – Medical University of
+                        Southern
+                        Africa (MEDUNSA)
+                    </li>
+                    <li><i class="fa-solid fa-tooth"></i>Bachelor of Dental Surgery (BDS), 2010 – Medical University of
+                        Southern Africa (MEDUNSA)
+                    </li>
+                    <li><i class="fa-solid fa-tooth"></i>Extensive experience serving diverse communities across the
+                        Lejweleputswa region
+                    </li>
+                    <li><i class="fa-solid fa-tooth"></i>Former dental practitioner in Bloemfontein (Mangaung Metro)
+                        from
+                        2010 to 2016
+                    </li>
+
+                </ul>
+                <p>Dr. Taje, a committed Free State dentist, is recognized for her compassionate, patient-first
+                    approach.
+                    Through community outreach and dedicated care, she ensures every patient receives personalized,
+                    high-quality treatment in a welcoming environment.
+                </p>
+            </div>
+            <div class="profile-image">
+                <picture>
+                    <source
+                            media="(min-width: 100px)"
+                            type="image/jpg"
+                            srcset="{% static 'img/about/1.jpg' %}"
+                    >
+                    <img src="" alt="">
+                </picture>
+            </div>
+        </div>
+
+    </article>
+    <article class="medical ">
+        <picture>
+            <source
+                    media="(min-width: 100px)"
+                    type="image/webp"
+                    srcset="{% static 'img/about/banner#2.webp' %}"
+            >
+            <source
+                    media="(min-width: 100px)"
+                    type="image/jpg"
+                    srcset="{% static 'img/about/banner#2.jpg' %}"
+            >
+            <img src="" alt="">
+        </picture>
+        <div class="container medical_text">
+            <h2>We Accept All Major Medical Aids</h2>
+            <p>
+                At Dr DM Taje practice, we believe quality dental care should be
+                accessible to everyone. That’s why we proudly accept all major medical
+                aids, ensuring our services are convenient and affordable for you and
+                your family. Our team is happy to assist with claims and guide you
+                through the process, so you can focus on maintaining a healthy smile
+                without added stress.
+            </p>
+        </div>
+    </article>
+    <article class="beyond">
+        <div class="beyond-container flex_div">
+
+            <div class="beyond-image">
+                 <picture>
+                    <source
+                            media="(min-width: 100px)"
+                            type="image/jpg"
+                            srcset="{% static 'img/about/2.jpg' %}"
+                    >
+                    <source
+                            media="(min-width: 100px)"
+                            type="image/jpg"
+                            srcset="{% static 'img/about/2.jpg' %}"
+                    >
+                    <img src="" alt="">
+                </picture>
+            </div>
+            <div class="beyond-text">
+                <h2>Caring Beyond Smiles</h2>
+                <p>At Dr. DM Taje's practice, patients receive expert dental care in a warm, welcoming environment. The
+                    team
+                    is dedicated to personalized, high-quality service that ensures every visit is comfortable. Beyond
+                    the
+                    practice, Dr. Taje is passionate about community outreach such as visiting schools to teach children
+                    about oral health and hygiene.</p>
+
+            </div>
+        </div>
+
+    </article>
+</section>
+{% endblock %}

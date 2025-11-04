@@ -1,0 +1,40 @@
+{% load static %}
+<div class="half-hero-container">
+
+    {% if heading == 'About us' %}
+    <div class="half-hero flex_div about">
+        <picture>
+            <source
+                    media="(min-width: 100px)"
+                    type="image/png"
+                    srcset="{% static 'img/about/2.png' %}"
+            >
+            <img src="" alt="">
+            {% elif heading == 'Services' %}
+
+            <div class="half-hero flex_div services">
+                <picture>
+                    <source
+                            media="(min-width: 100px)"
+                            type="image/png"
+                            srcset="{% static 'img/services/3.png' %}"
+                    >
+                    <img src="{% static 'img/services/1.jpg' %}">
+                    {% elif heading == 'Contacts' %}
+
+                    <div class="half-hero flex_div contacts">
+                        <picture>
+                            <source
+                                    media="(min-width: 100px)"
+                                    type="image/png"
+                                    srcset="{% static 'img/contact/1.png' %}"
+                            >
+                            <img scr="" alt="">
+                            {% endif %}
+                        </picture>
+                        <div class="half-hero-pic-text" data-aos="fade-up">
+                            <h2>{{ heading }}</h2>
+                            <p>{{subheading}}</p>
+                        </div>
+                    </div>
+            </div>
