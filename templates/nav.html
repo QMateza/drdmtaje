@@ -1,23 +1,22 @@
 {% load static %}
 
-<div id="logo">
-    <a href="{% url 'home' %}"><img src="{% static 'img/dentist-logo.png' %}" alt=""/></a>
+<div id="logo" class="logo">
+    <a href="{% url 'home' %}"><img src="{% static 'img/dentist-logo.png' %}" alt="Dr. D M Taje Dental Practice logo"/></a>
 </div>
-<nav class="flex_div">
-    <ul class="nav_links">
+<nav class="flex_div main-navigation" aria-label="Main navigation">
+    <ul class="nav_links" id="primary-menu">
         <li class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}"><a href="{% url 'home' %}">Home</a></li>
         <li class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}"><a href="{% url 'about' %}">About Us</a></li>
         <li class="{% if request.resolver_match.url_name == 'services' %}active{% endif %}"><a href="{% url 'services' %}">Services</a></li>
         <li class="{% if request.resolver_match.url_name == 'contacts' %}active{% endif %}"><a href="{% url 'contacts' %}">Contacts</a></li>
     </ul>
-    <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-        <div class="line3"></div>
-    </div>
+     <button class="burger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-menu">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </button>
 
-    <div>
-        <a href="{% url 'contacts' %}">Make an appointment</a>
+    <div class="cta">
+        <a href="{% url 'contacts' %}" class="btn btn-cta">Make an appointment</a>
     </div>
 </nav>
