@@ -758,7 +758,7 @@ form{
   height: 100%;
   object-fit: cover;
   object-position: 100% 50%;
-  z-index: -1; /* keeps image behind text */
+  z-index: -1;
 }
 
 footer {
@@ -774,7 +774,7 @@ position: relative;
   height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
-  z-index: -1; /* keeps image behind text */
+  z-index: -1;
 }
 
 
@@ -805,7 +805,7 @@ footer p {
   font-size: 0.8em;
 }
 
-/* About page */
+/*------------------- About page -------------------*/
 
 .half-hero-container {
     position: relative;
@@ -832,12 +832,12 @@ margin-bottom: .5em;
 .about picture,
 .about img {
   position: absolute;
-  inset: 0; /* shorthand for top/right/bottom/left:0 */
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 30% 70%;
-  z-index: -1; /* keeps image behind text */
+  z-index: -1;
 }
 
 .about_hero_pic p,
@@ -849,7 +849,6 @@ margin-bottom: .5em;
   letter-spacing: 5px;
   color: var(--pure_white);
 }
-
 
 .profile-container {
     margin: 0 auto;
@@ -908,12 +907,12 @@ margin-bottom: .5em;
 .medical picture,
 .medical img {
   position: absolute;
-  inset: 0; /* shorthand for top/right/bottom/left:0 */
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 80% 10%;
-  z-index: -1; /* keeps image behind text */
+  z-index: -1;
 }
 
 .medical_text h2 {
@@ -1036,12 +1035,12 @@ margin-bottom: .5em;
 .half-hero.contacts picture,
 .half-hero.contacts img {
   position: absolute;
-  inset: 0; /* shorthand for top/right/bottom/left:0 */
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 30% 70%;
-  z-index: -1; /* keeps image behind text */
+  z-index: -1;
 }
 
 .main-contact {
