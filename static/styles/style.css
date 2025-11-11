@@ -59,6 +59,8 @@ html {
 }
 
 body {
+max-width: 1700px;
+margin: 0 auto;
     font-size: var(--text-p);
   font-family: var(--font-family);
   background-color: var(--pure_white);
@@ -119,7 +121,8 @@ border: none;
 border-radius: 50px;
 }
 
-.btn-cta:link, .btn-cta:visited {
+.btn-cta,
+.btn-cta:any-link {
     background-color: var(--cta);
     color: var(--pure_white);
 }
@@ -652,6 +655,7 @@ color: var(--primary_blue);
 
 .contact-form {
     flex-direction: column;
+
 }
 
 .contact-form p {
@@ -675,6 +679,7 @@ form{
     background-color: #f9f9f9;
     border-radius: 5px;
     font-family: Poppins;
+    color: var(--gray);
 }
 
 .contact-form textarea{
