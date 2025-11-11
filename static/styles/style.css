@@ -1044,12 +1044,14 @@ margin-bottom: .5em;
   z-index: -1; /* keeps image behind text */
 }
 
+.main-contact {
+    margin: 5em auto 0;
+    padding: 1em;
+    width: 60%;
+}
+
 .main-contact-inner {
     margin: 0 auto;
-}
-.main-contact {
-    margin-top: 5em;
-    padding: 1em;
 }
 
 .main-contact h2 {
@@ -1061,7 +1063,8 @@ margin-bottom: .5em;
 }
 
 .main-contact-form button {
-    width: 30%;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .errMsg {
